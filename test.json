@@ -1,0 +1,103 @@
+const data = [
+  {
+    contract: 'SUMMIT',
+    manager: null,
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'Oswaldo Urdapilleta',
+    manager: 'SUMMIT',
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'Frank Vetrano',
+    manager: 'SUMMIT',
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'Gob Juntima',
+    manager: 'SUMMIT',
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'Corey West',
+    manager: 'SUMMIT',
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'Ian Weise',
+    manager: 'Gob Juntima',
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'Scott Burroughs',
+    manager: 'Gob Juntima',
+    engagement_lead: null,
+    amount: null
+  },
+
+  {
+    contract: 'Sandy Vicente',
+    manager: 'Gob Juntima',
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'Heather Brostos',
+    manager: 'Oswaldo Urdapilleta',
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'Kaye Burton',
+    manager: 'Corey West',
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'CDFI BGP',
+    manager: 'Ian Weise',
+    engagement_lead: 'Joe Bateman',
+    amount: '1000000'
+  },
+
+  {
+    contract: 'CDFI ARM',
+    manager: 'Ian Weise',
+    engagement_lead: 'Annie Perizzolo',
+    amount: '800000'
+  },
+
+  {
+    contract: 'RMCAP',
+    manager: 'Scott Burroughs',
+    engagement_lead: 'Balint Peto',
+    amount: '1000000'
+  },
+  {
+    contract: 'EBSA',
+    manager: 'Heather Brostos',
+    engagement_lead: '',
+    amount: '1000000'
+  },
+
+  {
+    contract: 'Mint',
+    manager: 'Sandy Vicente',
+    engagement_lead: 'Joe Schmoe',
+    amount: '3000000'
+  },
+
+  {
+    contract: 'RMBS Cases',
+    manager: 'Kaye Burton',
+    engagement_lead: 'Joe Schmoe',
+    amount: '3000000'
+  }
+];

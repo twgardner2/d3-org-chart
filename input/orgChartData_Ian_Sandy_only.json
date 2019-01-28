@@ -1,0 +1,73 @@
+[
+  {
+    "name": "SUMMIT",
+    "manager": null
+  },
+  {
+    "name": "Ian Weise",
+    "manager": "SUMMIT"
+  },
+  {
+    "name": "Sandy Vicente",
+    "manager": "SUMMIT"
+  },
+
+  {
+    "name": "Joe Bateman",
+    "manager": "Ian Weise"
+  },
+  {
+    "name": "Auyon Rahman",
+    "manager": "Joe Bateman"
+  },
+  {
+    "name": "Tony K",
+    "manager": "Joe Bateman"
+  },
+  {
+    "name": "Sam Seong",
+    "manager": "Ian Weise"
+  },
+  {
+    "name": "Tori Puryear",
+    "manager": "Sam Seong"
+  },
+  {
+    "name": "Julian Henry",
+    "manager": "Sam Seong"
+  },
+  {
+    "name": "Annie Perizzolo",
+    "manager": "Ian Weise"
+  },
+  {
+    "name": "Caleb Adams",
+    "manager": "Annie Perizzolo"
+  },
+  {
+    "name": "Christine Shaughnessy",
+    "manager": "Sandy Vicente"
+  },
+  {
+    "name": "Jackie Elliot",
+    "manager": "Christine Shaughnessy"
+  },
+  {
+    "name": "Esteban Paban",
+    "manager": "Christine Shaughnessy"
+  },
+  {
+    "name": "Brandon Canone",
+    "manager": "Jackie Elliot"
+  },
+  {
+    "name": "Adam Banker",
+    "manager": "Jackie Elliot"
+  },
+  {
+    "name": "Ian Feller",
+    "manager": "Sandy Vicente"
+  },
+  { "name": "Katie Lettunich", "manager": "Ian Feller" },
+  { "name": "Joey Nowariak", "manager": "Ian Feller" }
+]

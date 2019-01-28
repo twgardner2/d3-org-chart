@@ -1,0 +1,81 @@
+contract, manager, amount, staff
+CDFI BGP, Ian Weise,1000000, ["Joseph Bateman", "Auyon Rahman", "Tony Konjevoda"]
+USDA FSA,Sandy Vicente,1000000,["Kayla Andriate"\, "Robert Harkins"\, "Elise Pietro", "Olivia Hebner"],
+USDA FAS,
+        "manager": "Sandy Vicente",
+        "staff": ["Kayla Andriate", "Tony Konjevoda", "Elise Pietro"],
+        "amount": "1000000"
+    }, {
+        "contract": "USDA RD",
+        "manager": "Sandy Vicente",
+        "staff": ["Cristina Valverde", "Nichole Krom", "Andrew Campo"],
+        "amount": "1000000"
+    }, {
+        "contract": "OPIC",
+        "manager": "Sandy Vicente",
+        "staff": ["Christine Shaughnessy", "Jaclyn Elliot", "Adam Banker", "Brandon Cannone"],
+        "amount": "1000000"
+    }, {
+        "contract": "Ginnie Mae",
+        "manager": "Sandy Vicente",
+        "staff": ["Christine Shaughnessy", "Esteban Pabon"],
+        "amount": "1000000"
+    }, {
+        "contract": "FDIC",
+        "manager": "Sandy Vicente",
+        "staff": ["Christine Shaughnessy", "Esteban Pabon"],
+        "amount": "1000000"
+    }, {
+        "contract": "Promontory",
+        "manager": "Sandy Vicente",
+        "staff": ["Christine Shaughnessy", "Esteban Pabon"],
+        "amount": "1000000"
+    }, {
+        "contract": "SBA",
+        "manager": "Sandy Vicente",
+        "staff": ["Ian Feller", "Katie Lettunich", "Joseph Nowariak"],
+        "amount": "1000000"
+    }, {
+        "contract": "CDFI ARM",
+        "manager": "Ian Weise",
+        "staff": ["Annie Perizzolo", "Scott Senkier", "Tom Gardner"],
+        "amount": "800000"
+    }, {
+        "contract": "EPA - WIFIA",
+        "manager": "Ian Weise",
+        "staff": ["Samuel Seong", "Julian Henry", "Tori Puryear"],
+        "amount": "800000"
+    }, {
+        "contract": "EPA - USACE",
+        "manager": "Ian Weise",
+        "amount": "800000"
+    }, {
+        "contract": "RMCAP",
+        "manager": "Scott Burroughs",
+        "amount": "1000000"
+    }, {
+        "contract": "EBSA",
+        "manager": "Heather Brostos",
+        "amount": "1000000"
+    }, {
+        "contract": "EBSA2",
+        "manager": "Heather Brostos",
+        "amount": "1000000"
+    }, {
+        "contract": "RMBS Cases",
+        "manager": "Kaye Burton",
+        "amount": "3000000"
+    }, {
+        "contract": "Another Project",
+        "manager": "Kaye Burton",
+        "amount": "3000000"
+    }, {
+        "contract": "BestEx",
+        "manager": "Scott Burroughs",
+        "amount": "3000000"
+    }, {
+        "contract": "Something Else",
+        "manager": "Scott Burroughs",
+        "amount": "3000000"
+    }
+]

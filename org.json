@@ -1,0 +1,29 @@
+[
+  {
+    "contract": "CDFI BGP",
+    "manager": "Ian Weise",
+    "engagement_lead": "Joe Bateman",
+    "amount": "1000000"
+  },
+
+  {
+    "contract": "CDFI ARM",
+    "manager": "Ian Weise",
+    "engagement_lead": "Annie Perizzolo",
+    "amount": "800000"
+  },
+
+  {
+    "contract": "RMCAP",
+    "manager": "Scott Burroughs",
+    "engagement_lead": "Balint Peto",
+    "amount": "1000000"
+  },
+
+  {
+    "contract": "Mint",
+    "manager": "Sandy Vicente",
+    "engagement_lead": "Joe Schmoe",
+    "amount": "3000000"
+  }
+]

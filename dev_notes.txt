@@ -1,0 +1,185 @@
+const root = [
+  {
+    contract: 'SUMMIT',
+    manager: null,
+    engagement_lead: null,
+    amount: null
+  }
+];
+
+const managers = [
+  {
+    contract: 'Ian Weise',
+    manager: 'SUMMIT',
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'Scott Burroughs',
+    manager: 'SUMMIT',
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'Sandy Vicente',
+    manager: 'SUMMIT',
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'Heather Brostos',
+    manager: 'SUMMIT',
+    engagement_lead: null,
+    amount: null
+  },
+  {
+    contract: 'Kaye Burton',
+    manager: 'SUMMIT',
+    engagement_lead: null,
+    amount: null
+  }
+];
+
+const contractsUpdated = [
+  {
+    contract: 'CDFI BGP',
+    manager: 'Ian Weise',
+    staff: ['Joe Bateman', 'Auyon'],
+    amount: '1000000'
+  }
+];
+
+const contracts = [
+  {
+    contract: 'CDFI BGP',
+    manager: 'Ian Weise',
+    engagement_lead: 'Joe Bateman',
+    amount: '1000000'
+  },
+  {
+    contract: 'FDIC',
+    manager: 'Sandy Vicente',
+    engagement_lead: 'Joe Bateman',
+    amount: '1000000'
+  },
+  {
+    contract: 'CDFI ARM',
+    manager: 'Ian Weise',
+    engagement_lead: 'Annie Perizzolo',
+    amount: '800000'
+  },
+  {
+    contract: 'EPA - WIFIA',
+    manager: 'Ian Weise',
+    engagement_lead: 'Sam Seong',
+    amount: '800000'
+  },
+  {
+    contract: 'EPA - USACE',
+    manager: 'Ian Weise',
+    engagement_lead: 'Sam Seong',
+    amount: '800000'
+  },
+  {
+    contract: 'RMCAP',
+    manager: 'Scott Burroughs',
+    engagement_lead: 'Balint Peto',
+    amount: '1000000'
+  },
+  {
+    contract: 'EBSA',
+    manager: 'Heather Brostos',
+    engagement_lead: '',
+    amount: '1000000'
+  },
+  {
+    contract: 'EBSA2',
+    manager: 'Heather Brostos',
+    engagement_lead: '',
+    amount: '1000000'
+  },
+  {
+    contract: 'Mint',
+    manager: 'Sandy Vicente',
+    engagement_lead: 'Joe Schmoe',
+    amount: '3000000'
+  },
+  {
+    contract: 'FSA',
+    manager: 'Sandy Vicente',
+    engagement_lead: 'Joe Schmoe',
+    amount: '3000000'
+  },
+  {
+    contract: 'RMBS Cases',
+    manager: 'Kaye Burton',
+    engagement_lead: 'Joe Schmoe',
+    amount: '3000000'
+  },
+  {
+    contract: 'Another Project',
+    manager: 'Kaye Burton',
+    engagement_lead: 'Joe Schmoe',
+    amount: '3000000'
+  },
+  {
+    contract: 'BestEx',
+    manager: 'Scott Burroughs',
+    engagement_lead: 'Joe Schmoe',
+    amount: '3000000'
+  },
+  {
+    contract: 'Something Else',
+    manager: 'Scott Burroughs',
+    engagement_lead: 'Joe Schmoe',
+    amount: '3000000'
+  }
+];
+
+const staff = [
+  {
+    key: '1',
+    contract: 'Joe Bateman',
+    manager: 'CDFI BGP',
+    engagement_lead: 'Joe Bateman',
+    amount: '1000000'
+  },
+  {
+    key: '2',
+    contract: 'TBD',
+    manager: 'CDFI BGP',
+    engagement_lead: 'Joe Bateman',
+    amount: '1000000'
+  },
+  {
+    key: '3',
+    contract: 'Joe Bateman',
+    manager: 'CDFI ARM',
+    engagement_lead: 'Joe Bateman',
+    amount: '1000000'
+  }
+];
+
+
+
+
+
+=========================================
+
+
+
+
+
+
+
+    // window.setTimeout(function() {
+    //   drawOrgChart(rawData.slice((begin = 0), (end = rawData.length - 2)));
+    // }, 1500);
+
+    // window.setTimeout(function() {
+    //   drawOrgChart(
+    //     rawData.filter((el, i) => {
+    //       return i !== rawData.length - 6;
+    //     })
+    //   );
+    // }, 1500);
