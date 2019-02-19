@@ -1,24 +1,27 @@
-"use strict";
+'use strict';
 
 // Sizing variables
 export const margin = { top: 50, right: 50, bottom: 90, left: 90 },
-  width = 2000,
+  width = 1800,
   height = 300,
   treeHeightToSVGHeightRatio = 0.55,
   node_height = 25,
-  name_node_width = 120;
+  name_node_width = 150;
+
+// Colors
+export const summit_blue = '#52B6E8';
 
 // Color Scales
 const staffColorScale = d3
   .scaleOrdinal()
   .domain([
-    "analyst",
-    "senior_analyst",
-    "consultant",
-    "senior_consultant",
-    "other"
+    'analyst',
+    'senior_analyst',
+    'consultant',
+    'senior_consultant',
+    'other'
   ])
-  .range(["fuchsia", "navy", "green", "olive", "maroon"]);
+  .range(['fuchsia', 'navy', 'green', 'olive', 'maroon']);
 
 // Data input parsing function
 export const map_parse_input_data = d => {
@@ -38,7 +41,7 @@ export const stratify = d3
 export function searchObj(obj, query) {
   for (var key in obj) {
     var value = obj[key];
-    if (typeof value === "object") {
+    if (typeof value === 'object') {
       searchObj(value, query);
     }
     if (value === query) {
@@ -61,21 +64,21 @@ export function findIndicesOfMatches(arrayOfObjects, query) {
 
 export const draw_link_paths = d => {
   return (
-    "M" +
+    'M' +
     d.x +
-    "," +
+    ',' +
     d.y +
-    "C" +
+    'C' +
     d.x +
-    "," +
+    ',' +
     (d.y + d.parent.y) / 2 +
-    " " +
+    ' ' +
     d.parent.x +
-    "," +
+    ',' +
     (d.y + d.parent.y) / 2 +
-    " " +
+    ' ' +
     d.parent.x +
-    "," +
+    ',' +
     d.parent.y
   );
 };
