@@ -61,7 +61,7 @@ const drawOrgChart = data => {
     .attr('class', 'link')
     .attr('d', lib.draw_link_paths);
 
-  // Define and append leaves
+  // Define and append group for node rectangles and text
   var leafs = g
     .selectAll('.node')
     .data(nodes.descendants(), d => d.name)
@@ -71,7 +71,8 @@ const drawOrgChart = data => {
     .attr('transform', function(d) {
       return 'translate(' + d.x + ',' + d.y + ')';
     });
-  var rect_colors = ['black', 'black', 'black', 'black', 'black'];
+
+  // Append node rectangles
   leafs
     .append('rect')
     .attr('height', lib.node_height)
@@ -79,9 +80,7 @@ const drawOrgChart = data => {
       const extent = d3.extent(d.leaves().map(d => d.x));
       return extent[1] - extent[0] + lib.name_node_width;
     })
-    .attr('stroke', d => {
-      return rect_colors[d.depth];
-    })
+    .attr('stroke', 'black')
     .attr('transform', d => {
       const first_leaf_x = d.leaves()[0].x;
       return `translate(${-(d.x - first_leaf_x + lib.name_node_width / 2)},0)`;
@@ -89,7 +88,8 @@ const drawOrgChart = data => {
     .attr('rx', 5)
     .attr('ry', 5)
     .attr('fill', lib.summit_blue);
-  // .attr('fill', '#efefef');
+
+  // Append node text
   leafs
     .append('text')
     .attr('dy', '.35em')
@@ -100,9 +100,9 @@ const drawOrgChart = data => {
     .style('font-size', function(d) {
       return (
         Math.min(
-          lib.node_height - 10,
-          ((lib.name_node_width - 18) / (0.8 * this.getComputedTextLength())) *
-            20
+          lib.node_height * 0.85,
+          this.parentNode.children[0].getBBox().width /
+            (this.getNumberOfChars() * 0.57)
         ) + 'px'
       );
     });
