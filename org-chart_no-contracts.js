@@ -16,36 +16,35 @@ d3.json('./input/orgChartData_Ian_Sandy_only.json')
     console.log(stratified_data);
     return stratified_data;
   })
+  // Create tree layout
+  .then(data => {
+    // const nodes = lib.tree(data);
+    console.log(nodes);
+    return nodes;
+  })
   // Pass to drawOrgChart
   .then(data => {
     drawOrgChart(data);
   });
 
 // Draw function
-const drawOrgChart = data => {
+const drawOrgChart = nodes => {
   // Append and size SVG canvas
   const svg = d3
     .select('#viz')
     .append('svg')
     .attr('width', lib.width + lib.margin.left + lib.margin.right)
     .attr('height', lib.height + lib.margin.bottom + lib.margin.top);
-  // Define tree layout function
-  const tree = d3.cluster().size([lib.width, lib.height]);
-  //.separation(d => lib.name_node_width * 0.012);
 
-  var nodes = tree(data);
-  console.log(nodes);
+  // Define dropshadow filter
+  const filter = svg
+    .append('defs')
+    .append('filter')
+    .attr('id', 'f2')
+    .attr('width', '150%')
+    .attr('height', '150%');
 
-  // Sort nodes
-  // nodes
-  //   .sum(function(d) {
-  //     return d.value;
-  //   })
-  //   .sort(function(a, b) {
-  //     return b.height - a.height; // || a.id.localeCompare(b.id);
-  //   });
-
-  // const root_node = tree(nodes);
+  filter.append('feDropShadow');
 
   // Append group to hold org chart
   const g = svg
@@ -56,9 +55,11 @@ const drawOrgChart = data => {
   const links = g
     .selectAll('.link')
     .data(nodes.descendants().slice(1))
+    // .data(data.descendants().slice(1))
     .enter()
     .append('path')
     .attr('class', 'link')
+    .attr('filter', 'url(#f2)')
     .attr('d', lib.draw_link_paths);
 
   // Define and append group for node rectangles and text
@@ -80,7 +81,9 @@ const drawOrgChart = data => {
       const extent = d3.extent(d.leaves().map(d => d.x));
       return extent[1] - extent[0] + lib.name_node_width;
     })
-    .attr('stroke', 'black')
+    .attr('stroke', d => (d.data.horizontal ? 'red' : 'black'))
+    .attr('stroke-width', d => (d.data.horizontal ? '2px' : '1px'))
+    .attr('filter', 'url(#f2)')
     .attr('transform', d => {
       const first_leaf_x = d.leaves()[0].x;
       return `translate(${-(d.x - first_leaf_x + lib.name_node_width / 2)},0)`;
@@ -97,12 +100,13 @@ const drawOrgChart = data => {
     .attr('y', lib.node_height / 2)
     .style('text-anchor', 'middle')
     .text(d => d.data.name)
+    .style('font-weight', 'bold')
     .style('font-size', function(d) {
       return (
         Math.min(
           lib.node_height * 0.85,
           this.parentNode.children[0].getBBox().width /
-            (this.getNumberOfChars() * 0.57)
+            (this.getNumberOfChars() * 0.65)
         ) + 'px'
       );
     });

@@ -2,11 +2,11 @@
 
 // Sizing variables
 export const margin = { top: 50, right: 50, bottom: 90, left: 90 },
-  width = 1800,
+  width = 1500,
   height = 300,
   treeHeightToSVGHeightRatio = 0.55,
   node_height = 25,
-  name_node_width = 150;
+  name_node_width = 125;
 
 // Colors
 export const summit_blue = '#52B6E8';
@@ -27,7 +27,8 @@ const staffColorScale = d3
 export const map_parse_input_data = d => {
   return {
     manager: d.manager === null ? null : d.manager.trim(),
-    name: d.name.trim()
+    name: d.name.trim(),
+    horizontal: d.horizontal
   };
 };
 
@@ -36,6 +37,12 @@ export const stratify = d3
   .stratify()
   .parentId(d => d.manager)
   .id(d => d.name);
+
+// Define tree layout function
+export const tree = d3
+  .cluster()
+  .size([width, height])
+  .separation(d => 1);
 
 // ???
 export function searchObj(obj, query) {

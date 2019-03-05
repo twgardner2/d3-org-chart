@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Poppa & Bella",
+    "manager": null,
+    "horizontal": false
+  },
+  {
+    "name": "Tom & Julia",
+    "manager": "Poppa & Bella",
+    "horizontal": false
+  },
+  {
+    "name": "Graham & Jenny",
+    "manager": "Poppa & Bella",
+    "horizontal": false
+  },
+  {
+    "name": "Thomas William",
+    "manager": "Tom & Julia",
+    "horizontal": false
+  },
+  {
+    "name": "Louisa Jane",
+    "manager": "Tom & Julia",
+    "horizontal": false
+  },
+  {
+    "name": "George Gordon",
+    "manager": "Tom & Julia",
+    "horizontal": false
+  },
+  {
+    "name": "Murphy the Durphy",
+    "manager": "Graham & Jenny",
+    "horizontal": false
+  }
+]
