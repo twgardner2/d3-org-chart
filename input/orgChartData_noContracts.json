@@ -1,0 +1,112 @@
+[
+  {
+    "name": "SUMMIT",
+    "manager": null,
+    "horizontal": false
+  },
+  {
+    "name": "Albert",
+    "manager": "SUMMIT",
+    "horizontal": false
+  },
+  {
+    "name": "Anthony",
+    "manager": "SUMMIT",
+    "horizontal": false
+  },
+  {
+    "name": "Gob",
+    "manager": "SUMMIT",
+    "horizontal": false
+  },
+  {
+    "name": "Antoinette",
+    "manager": "Gob",
+    "horizontal": false
+  },
+  {
+    "name": "Scott B.",
+    "manager": "Gob",
+    "horizontal": false
+  },
+  {
+    "name": "Balint",
+    "manager": "Albert",
+    "horizontal": false
+  },
+  {
+    "name": "Oswaldo",
+    "manager": "Albert",
+    "horizontal": false
+  },
+  {
+    "name": "Heather",
+    "manager": "Albert",
+    "horizontal": false
+  },
+  {
+    "name": "Mark",
+    "manager": "Albert",
+    "horizontal": false
+  },
+  {
+    "name": "Corey",
+    "manager": "Albert",
+    "horizontal": false
+  },
+  {
+    "name": "Susan",
+    "manager": "Anthony",
+    "horizontal": false
+  },
+  {
+    "name": "Jenn",
+    "manager": "Anthony",
+    "horizontal": false
+  },
+  {
+    "name": "Kaye",
+    "manager": "Anthony",
+    "horizontal": false
+  },
+  {
+    "name": "Virginia",
+    "manager": "Anthony",
+    "horizontal": false
+  },
+  {
+    "name": "Kate",
+    "manager": "Anthony",
+    "horizontal": false
+  },
+  {
+    "name": "Christine",
+    "manager": "Scott B.",
+    "horizontal": false
+  },
+  {
+    "name": "Jackie",
+    "manager": "Christine",
+    "horizontal": false
+  },
+  {
+    "name": "Esteban",
+    "manager": "Christine",
+    "horizontal": false
+  },
+  {
+    "name": "Nick M",
+    "manager": "Esteban",
+    "horizontal": false
+  },
+  {
+    "name": "Brandon",
+    "manager": "Jackie",
+    "horizontal": false
+  },
+  {
+    "name": "Andrew T",
+    "manager": "Brandon",
+    "horizontal": false
+  }
+]

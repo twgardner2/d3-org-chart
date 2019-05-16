@@ -2,8 +2,8 @@
 
 // Sizing variables
 export const margin = { top: 50, right: 50, bottom: 90, left: 90 },
-  width = 1500,
-  height = 300,
+  width = 2000,
+  height = 600,
   treeHeightToSVGHeightRatio = 0.55,
   node_height = 25,
   name_node_width = 125;

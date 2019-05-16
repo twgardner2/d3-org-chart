@@ -1,7 +1,7 @@
 import * as lib from './lib.js';
 
 // Read data and parse
-d3.json('./input/orgChartData_Ian_Sandy_only.json')
+d3.json('./input/orgChartData_noContracts.json')
   .then(data => {
     return data.map(lib.map_parse_input_data);
   })
@@ -18,7 +18,7 @@ d3.json('./input/orgChartData_Ian_Sandy_only.json')
   })
   // Create tree layout
   .then(data => {
-    // const nodes = lib.tree(data);
+    const nodes = lib.tree(data);
     console.log(nodes);
     return nodes;
   })
